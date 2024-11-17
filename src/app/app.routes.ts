@@ -9,18 +9,25 @@ import { AddCandidate } from './pages/add-candidate/add-candidate.component';
 import { Profile } from './pages/profile/profile.component';
 import { Compatibility } from './pages/compatibility/compatibility.component';
 import { Landing } from './pages/landing/landing.component';
+import { Layout } from './layout/layout.component';
 
 export const routes: Routes = [
-  
-  { path: '', component: Home },
   { path: 'landing', component: Landing },
-  { path: 'login', component: Login },
-  { path: 'register', component: Register },
-  { path: 'daily-card', component: DailyCard },
-  { path: 'colleagues', component: Colleagues },
-  { path: 'candidates', component: Candidates },
-  { path: 'candidates/add', component: AddCandidate },
-  { path: 'profile', component: Profile },
-  { path: 'compatibility', component: Compatibility },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
+  {
+    path: '',
+    component: Layout,
+    children: [
+      { path: 'home', component: Home },
+      { path: 'login', component: Login },
+      { path: 'register', component: Register },
+      { path: 'daily-card', component: DailyCard },
+      { path: 'colleagues', component: Colleagues },
+      { path: 'candidates', component: Candidates },
+      { path: 'candidates/add', component: AddCandidate },
+      { path: 'profile', component: Profile },
+      { path: 'compatibility', component: Compatibility },
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+    ],
+  },
+  { path: '**', redirectTo: 'landing' },
 ];

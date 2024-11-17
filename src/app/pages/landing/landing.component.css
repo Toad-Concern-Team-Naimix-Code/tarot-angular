@@ -1,0 +1,9 @@
+.landing {
+  background-image: url('/assets/landing_bg.png') !important;
+  height: 100vh;
+}
+
+.header {
+  padding: 12px 8px;
+  z-index: 10;
+}

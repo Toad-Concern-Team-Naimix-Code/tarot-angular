@@ -1,15 +1,15 @@
-<div nz-row class="header">
-  <div nz-col nzSpan="12">
-    <h3 nz-typography>НАЙМИКС ТАРО</h3>
+@if ({ url: routeUrl$ | async }; as route) {
+  <div nz-flex nzAlign="center" nzJustify="space-between" class="header">
+    <h3 nz-typography class="header__logo">
+      <a routerLink="/"> НАЙМИКС ТАРО </a>
+    </h3>
+    <nav>
+      <ul class="header__nav_menu">
+        <li><a routerLink="/"><span tarotIcon="dice"></span> Карта дня</a></li>
+        <li><a routerLink="/colleagues"><span tarotIcon="briefcase"> </span> Коллеги</a></li>
+        <li><a routerLink="/candidates"><span tarotIcon="balancescale"> </span> Кандидаты</a></li>
+        <li class="header__nav_avatar"><a routerLink="/profile"><span tarotIcon="avatar"> </span></a> </li>
+      </ul>
+    </nav>
   </div>
-  <div nz-col nzSpan="12">
-    <div nz-row>
-      <div nz-col nzSpan="8" nzOffset="12">
-        <button nz-button nzType="default">Зарегистрироваться</button>
-      </div>
-      <div nz-col nzSpan="4">
-        <button nz-button nzType="primary">Войти</button>
-      </div>
-    </div>
-  </div>
-</div>
+}

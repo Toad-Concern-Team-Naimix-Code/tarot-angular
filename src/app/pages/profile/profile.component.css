@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.profile {
+  height: 100%;
+}
+
+.card__title {
+  font-size: 100px;
+  font-family: 'Forum', sans-serif !important;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.card__title span {
+  width: 40px;
+  height: 40px;
+}
+
+.profile__title {
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Forum', sans-serif !important;
+}
+
+.card {
+  max-width: 100%;
+  max-height: 733px;
+}
+
+.card__desc {
+  font-size: 24px;
+  font-weight: 500;
+  color: #999;
+  text-align: center;
+}
+
+.card__button {
+  margin-top: 60px;
+}
+
+.profile__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__avatar {
+  width: 250px;
+  height: 250px;
+}
+
+.profile__name {
+  font-size: 32px;
+  text-align: center;
+}
+
+.profile__info {
+  color: #999;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}

@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './daily-card.component.html',
-  styleUrl: './daily-card.component.css'
+  styleUrl: './daily-card.component.css',
 })
-export class DailyCard {
-
-}
+export class DailyCard {}

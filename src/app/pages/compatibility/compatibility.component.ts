@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './compatibility.component.html',
-  styleUrl: './compatibility.component.css'
+  styleUrl: './compatibility.component.css',
 })
-export class Compatibility {
-
-}
+export class Compatibility {}
