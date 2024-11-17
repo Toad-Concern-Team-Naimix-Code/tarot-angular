@@ -40,3 +40,7 @@
   width: 35px;
   height: 35px;
 }
+
+.header__nav_menu a.header__nav_active {
+  color: #f6b762;
+}

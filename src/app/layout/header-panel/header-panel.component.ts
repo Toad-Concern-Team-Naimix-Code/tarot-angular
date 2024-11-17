@@ -30,4 +30,8 @@ export class HeaderPanel {
     filter((event) => event instanceof NavigationEnd),
     map(({ urlAfterRedirects }) => urlAfterRedirects),
   );
+
+  ngOnInit() {
+    this.routeUrl$.subscribe((url) => console.log(url))
+  }
 }

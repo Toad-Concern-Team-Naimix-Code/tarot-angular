@@ -5,9 +5,9 @@
     </h3>
     <nav>
       <ul class="header__nav_menu">
-        <li><a routerLink="/"><span tarotIcon="dice"></span> Карта дня</a></li>
-        <li><a routerLink="/colleagues"><span tarotIcon="briefcase"> </span> Коллеги</a></li>
-        <li><a routerLink="/candidates"><span tarotIcon="balancescale"> </span> Кандидаты</a></li>
+        <li><a routerLink="/home" [class]="route.url === '/home' ? 'header__nav_active' : ''"><span tarotIcon="dice"></span> Карта дня</a></li>
+        <li><a routerLink="/colleagues" [class]="route.url === '/colleagues' ? 'header__nav_active' : ''"><span tarotIcon="briefcase"> </span> Коллеги</a></li>
+        <li><a routerLink="/candidates" [class]="route.url === '/candidates' ? 'header__nav_active' : ''"><span tarotIcon="balancescale"> </span> Кандидаты</a></li>
         <li class="header__nav_avatar"><a routerLink="/profile"><span tarotIcon="avatar"> </span></a> </li>
       </ul>
     </nav>
